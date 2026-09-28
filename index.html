@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anita Jepngetich Portfolio</title>
+<!--Loading the Poppins google font with an early connection link with font weights of 400, 500, 600, and 700 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!--Loading the Tailwind CSS framework from a CDN -->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3"></script>
+<!--Linking the external CSS file for custom styles -->
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="outer-frame">
+  <div class="inner-box">
+
+    <!-- Hidden radio buttons to control which section shows -->
+    <input type="radio" name="tabs" id="tab-home" class="tab-radio" checked>
+    <input type="radio" name="tabs" id="tab-about" class="tab-radio">
+    <input type="radio" name="tabs" id="tab-skills" class="tab-radio">
+    <input type="radio" name="tabs" id="tab-hobbies" class="tab-radio">
+    <input type="radio" name="tabs" id="tab-contact" class="tab-radio">
+
+    <!-- Nav bar -->
+    <nav class="navbar">
+      <div class="logo">Anita</div>
+      <ul class="nav-links">
+        <li><label for="tab-home">Home</label></li>
+        <li><label for="tab-about">About</label></li>
+        <li><label for="tab-skills">Skills</label></li>
+        <li><label for="tab-hobbies">Hobbies</label></li>
+        <li><label for="tab-contact">Contact</label></li>
+      </ul>
+    </nav>
+
+    <!--HOME-->
+    <section id="home" class="section hero">
+      <div class="bg-word">Home</div>
+      <div class="section-inner">
+        <p class="greeting">Hey! I'm </p>
+        <h1 class="name">Anita Jepngetich</h1>
+     <!--Styled photocircle using Tailwind CSS -->
+        <div class="photo-circle">
+          <img src="Anita.jpeg" alt="Anita Jepngetich">
+        </div>
+      <!-- Styled button with Tailwind CSS -->
+        <label for="tab-contact" class="inline-block cursor-pointer rounded-full bg-brand px-8 py-3.5 font-semibold text-[#111] hover:bg-[#ff6ba7] text-white">Say Hello</label>
+      </div>
+    </section>
+
+    <!--ABOUT-->
+    <section id="about" class="section">
+      <div class="bg-word">About</div>
+      <div class="section-inner">
+        <h2 class="section-title">Who am I?</h2>
+        <p class="section-text">
+          An electrical and electronics engineer with basic proficiency in
+          software development.
+        </p>
+        <p class="section-text">
+          I am passionate about learning new technologies to enhance my skills.
+          My goal is to contribute to innovative projects that make a positive
+          impact on users' lives. Outside of code, I enjoy design
+          and finding small ways to make everyday things feel a little nicer
+          and easier using tech.
+        </p>
+      </div>
+    </section>
+
+    <!--SKILLS-->
+    <section id="skills" class="section">
+      <div class="bg-word">Skills</div>
+      <div class="section-inner">
+        <h2 class="section-title">Skills</h2>
+        <div class="chip-row">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Power Systems</span>
+          <span class="chip">Telecommunication</span>
+          <span class="chip">Electrical Design</span>
+        </div>
+
+        <div class="skills-footer">
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/anita-kimutai-351115369" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <span>&middot;</span>
+            <a href="https://github.com/anita-aj" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+          <p class="skills-footer-copy">&copy; 2026 Anita Jepngetich. All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--HOBBIES-->
+    <section id="hobbies" class="section">
+      <div class="bg-word">Hobbies</div>
+      <div class="section-inner">
+        <h2 class="section-title">Hobbies</h2>
+        <div class="chip-row">
+          <span class="chip">Playing the Piano</span>
+          <span class="chip">Hiking</span>
+          <span class="chip">Gardening</span>
+          <span class="chip">Listening to Music</span>
+        </div>
+      </div>
+    </section>
+
+    <!--CONTACT-->
+    <section id="contact" class="section">
+      <div class="bg-word">Contact</div>
+      <div class="section-inner">
+        <h2 class="section-title">Let's Talk</h2>
+        <p class="section-text">Have something in mind? Reach out any time.</p>
+        <a href="mailto:anitakimutai99@gmail.com" class="btn">anitakimutai99@gmail.com</a>
+      </div>
+    </section>
+
+    <footer class="footer border-t border-[#222] p-6 text-center text-sm text-[#777]">
+      <p>&copy; 2026 Anita Jepngetich. All rights reserved.</p>
+    </footer>
+
+  </div>
+</div>
+
+</body>
+</html>
