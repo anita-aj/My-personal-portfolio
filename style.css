@@ -50,6 +50,8 @@ body {
   list-style: none;
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .nav-links label {
@@ -155,11 +157,6 @@ body {
   object-fit: cover;
 }
 
-.tagline {
-  font-size: 1.1rem;
-  color: #bbb;
-  margin-bottom: 25px;
-}
 
 
 /* CHIPS (Skills / Hobbies) */
